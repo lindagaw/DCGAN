@@ -6,7 +6,10 @@ for domain in os.listdir(dataroot):
     for image_type in os.listdir(dataroot + domain + '//images//'):
         src = dataroot + domain + '//images//' + image_type
         dst = dataroot + domain + '//images//' + image_type + '//actual_images//'
-        os.makedirs(dst)
+        try:
+            os.makedirs(dst)
+        except Exception as e:
+            print(e)
         #os.rename(src, dst)
         for item in os.listdir(src):
             if os.path.isdir(item):
