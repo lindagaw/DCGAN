@@ -31,7 +31,7 @@ dataroot = "..//..//images//Office-31//amazon//images//"
 workers = 2
 
 # Batch size during training
-batch_size = 128
+batch_size = 26
 
 # Spatial size of training images. All images will be resized to this
 #   size using a transformer.
@@ -45,7 +45,7 @@ ngf = 64
 # Size of feature maps in discriminator
 ndf = 64
 # Number of training epochs
-num_epochs = 5
+num_epochs = 100
 # Learning rate for optimizers
 lr = 0.0002
 # Beta1 hyperparam for Adam optimizers
