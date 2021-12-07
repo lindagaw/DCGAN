@@ -288,7 +288,5 @@ def generate_fakes(dataroot, name):
 # call the above function for each subfolder in a DA dataset (e.g. DSLR, Amazon)
 # Root directory for dataset
 #dataroot = "..//..//images//dcgan//"
-dataroot = "..//..//images//Office-31//"
-
-for domain in os.listdir(dataroot):
-    generate_fakes(os.path.join(dataroot, domain), domain)
+dataroot = "..//..//images//Office-31//dslr//images//desktop_computer//"
+generate_fakes(dataroot, 'desktop_computer')
