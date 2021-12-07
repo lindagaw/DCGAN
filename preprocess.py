@@ -15,7 +15,7 @@ for domain in os.listdir(dataroot):
             if os.path.isdir(item):
                 continue
 
-            original_path = src + item
+            original_path = src + '//' + item
             new_path = dst + item
             shutil.move(original_path, new_path)
             print(new_path)
