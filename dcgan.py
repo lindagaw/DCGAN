@@ -45,7 +45,7 @@ ngf = 64
 # Size of feature maps in discriminator
 ndf = 64
 # Number of training epochs
-num_epochs = 100
+num_epochs = 300
 # Learning rate for optimizers
 lr = 0.0002
 # Beta1 hyperparam for Adam optimizers
