@@ -26,7 +26,7 @@ torch.manual_seed(manualSeed)
 
 # Root directory for dataset
 dataroot = "..//..//images//dcgan//"
-dataroot = "..//..//images//Office-31//amazon//images//back_pack//"
+dataroot = "..//..//images//Office-31//amazon//images//"
 # Number of workers for dataloader
 workers = 2
 
