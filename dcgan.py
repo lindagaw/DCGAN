@@ -291,4 +291,4 @@ def generate_fakes(dataroot, name):
 dataroot = "..//..//images//Office-31//"
 
 for domain in os.listdir(dataroot):
-    generate_fakes(os.join(dataroot, domain), domain)
+    generate_fakes(os.path.join(dataroot, domain), domain)
