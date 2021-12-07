@@ -13,6 +13,7 @@ for domain in os.listdir(dataroot):
         #os.rename(src, dst)
         for item in os.listdir(src):
             if os.path.isdir(item):
+                print(os.path.isdir(item))
                 continue
 
             original_path = src + '//' + item
