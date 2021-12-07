@@ -12,11 +12,13 @@ for domain in os.listdir(dataroot):
             print(e)
         #os.rename(src, dst)
         for item in os.listdir(src):
-            if os.path.isdir(item):
-                print(os.path.isdir(item))
-                continue
+            print(item)
+            print(os.path.isdir(item))
 
-            original_path = src + '//' + item
-            new_path = dst + item
-            shutil.move(original_path, new_path)
-            print(new_path)
+            if os.path.isdir(item):
+                continue
+            else:
+                original_path = src + '//' + item
+                new_path = dst + item
+                shutil.move(original_path, new_path)
+                print(new_path)
